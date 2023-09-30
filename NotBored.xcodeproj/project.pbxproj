@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		761FA0672AC7A29600AFDC4C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761FA0662AC7A29600AFDC4C /* StartViewController.swift */; };
+		761FA0692AC7A3A700AFDC4C /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761FA0682AC7A3A700AFDC4C /* StartView.swift */; };
+		761FA06E2AC7C40B00AFDC4C /* CheckboxIconEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761FA06D2AC7C40B00AFDC4C /* CheckboxIconEnum.swift */; };
+		7626CEEB2AC8D3EF00965C7D /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7626CEEA2AC8D3EF00965C7D /* Checkbox.swift */; };
 		7687513F2AC6755700AD90E2 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687513E2AC6755700AD90E2 /* ViewCode.swift */; };
 		76BA3D812AC51C2E00CEC8C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3D802AC51C2E00CEC8C5 /* AppDelegate.swift */; };
 		76BA3D832AC51C2E00CEC8C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3D822AC51C2E00CEC8C5 /* SceneDelegate.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		761FA0662AC7A29600AFDC4C /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		761FA0682AC7A3A700AFDC4C /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		761FA06D2AC7C40B00AFDC4C /* CheckboxIconEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxIconEnum.swift; sourceTree = "<group>"; };
+		7626CEEA2AC8D3EF00965C7D /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		7687513E2AC6755700AD90E2 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 		76BA3D7D2AC51C2E00CEC8C5 /* NotBored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotBored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BA3D802AC51C2E00CEC8C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		761FA05D2AC7A12200AFDC4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		761FA05E2AC7A12F00AFDC4C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		761FA05F2AC7A14B00AFDC4C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		761FA0602AC7A15E00AFDC4C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				761FA06C2AC7C3BC00AFDC4C /* Checkbox */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		761FA0612AC7A19000AFDC4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				761FA0622AC7A1E900AFDC4C /* Start */,
+				761FA0632AC7A21000AFDC4C /* TermsAndConditions */,
+				761FA0642AC7A22400AFDC4C /* Activities */,
+				761FA0652AC7A23200AFDC4C /* ActivitySuggestion */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		761FA0622AC7A1E900AFDC4C /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				761FA0662AC7A29600AFDC4C /* StartViewController.swift */,
+				761FA0682AC7A3A700AFDC4C /* StartView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		761FA0632AC7A21000AFDC4C /* TermsAndConditions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TermsAndConditions;
+			sourceTree = "<group>";
+		};
+		761FA0642AC7A22400AFDC4C /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		761FA0652AC7A23200AFDC4C /* ActivitySuggestion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ActivitySuggestion;
+			sourceTree = "<group>";
+		};
+		761FA06C2AC7C3BC00AFDC4C /* Checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				761FA06D2AC7C40B00AFDC4C /* CheckboxIconEnum.swift */,
+				7626CEEA2AC8D3EF00965C7D /* Checkbox.swift */,
+			);
+			path = Checkbox;
+			sourceTree = "<group>";
+		};
 		7687513C2AC6751F00AD90E2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +162,11 @@
 		76BA3D7F2AC51C2E00CEC8C5 /* NotBored */ = {
 			isa = PBXGroup;
 			children = (
+				761FA0612AC7A19000AFDC4C /* Views */,
+				761FA0602AC7A15E00AFDC4C /* Components */,
+				761FA05F2AC7A14B00AFDC4C /* Helpers */,
+				761FA05E2AC7A12F00AFDC4C /* Services */,
+				761FA05D2AC7A12200AFDC4C /* Models */,
 				7687513D2AC6754600AD90E2 /* Protocols */,
 				7687513C2AC6751F00AD90E2 /* Resources */,
 				76BA3D842AC51C2E00CEC8C5 /* ViewController.swift */,
@@ -153,8 +245,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7626CEEB2AC8D3EF00965C7D /* Checkbox.swift in Sources */,
+				761FA0672AC7A29600AFDC4C /* StartViewController.swift in Sources */,
+				761FA06E2AC7C40B00AFDC4C /* CheckboxIconEnum.swift in Sources */,
 				76BA3D852AC51C2E00CEC8C5 /* ViewController.swift in Sources */,
 				76BA3D812AC51C2E00CEC8C5 /* AppDelegate.swift in Sources */,
+				761FA0692AC7A3A700AFDC4C /* StartView.swift in Sources */,
 				76BA3D832AC51C2E00CEC8C5 /* SceneDelegate.swift in Sources */,
 				7687513F2AC6755700AD90E2 /* ViewCode.swift in Sources */,
 			);
