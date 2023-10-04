@@ -8,7 +8,10 @@
 import UIKit
 
 class Checkbox: UIButton {
-
+    // MARK: Properties
+    var onStateChanged: (() -> Void) = {}
+    
+    // MARK: Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -19,13 +22,28 @@ class Checkbox: UIButton {
         configure()
     }
     
-    func configure() {
+    private func configure() {
         setupCheckBox(title: currentTitle)
         addTarget(self, action: #selector(clickAction), for: .touchUpInside)
     }
     
-    @objc func clickAction(_ sender: UIButton) {
+    @objc private func clickAction(_ sender: UIButton) {
         isSelected = !isSelected
+        
+        onStateChanged()
+    }
+    
+    override func setTitle(_ title: String?, for state: UIControl.State) {
+        setupCheckBox(title: title)
+    }
+    
+    private func setupCheckBox(title: String?) {
+        let textColor = ColorEnum.getColor(of: .textLight)
+        let iconColor = ColorEnum.getColor(of: .backgroundButton)
+        setupState(.normal, title: title, textColor: textColor, iconCode: .unchecked, iconColor: iconColor)
+        setupState(.selected, title: title, textColor: textColor, iconCode: .checked, iconColor: iconColor)
+        setupState([.normal, .disabled], title: title, textColor: .gray, iconCode: .unchecked, iconColor: .gray)
+        setupState([.selected, .disabled], title: title, textColor: .gray, iconCode: .checked, iconColor: .gray)
     }
     
     private func setupState(_ state: UIControl.State, title: String?, textColor: UIColor, iconCode: CheckboxIconEnum, iconColor: UIColor) {
@@ -65,18 +83,5 @@ class Checkbox: UIButton {
 
         // Defina o texto atribuído ao botão
         setAttributedTitle(attributedText, for: state)
-    }
-    
-    func setupCheckBox(title: String?) {
-        let textColor = ColorEnum.getColor(of: .textLight)
-        let iconColor = ColorEnum.getColor(of: .backgroundButton)
-        setupState(.normal, title: title, textColor: textColor, iconCode: .unchecked, iconColor: iconColor)
-        setupState(.selected, title: title, textColor: textColor, iconCode: .checked, iconColor: iconColor)
-        setupState([.normal, .disabled], title: title, textColor: .gray, iconCode: .unchecked, iconColor: .gray)
-        setupState([.selected, .disabled], title: title, textColor: .gray, iconCode: .checked, iconColor: .gray)
-    }
-    
-    override func setTitle(_ title: String?, for state: UIControl.State) {
-        setupCheckBox(title: title)
     }
 }

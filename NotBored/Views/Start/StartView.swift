@@ -53,7 +53,6 @@ class StartView: UIView {
         let segmentItem = ["Free", "Low", "Medium", "High"]
         let segmentedControl = UISegmentedControl(items: segmentItem)
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
-//        segmentedControl.tintColor = ColorEnum.getColor(of: .selectedSegmented)
         segmentedControl.backgroundColor = ColorEnum.getColor(of: .backgroundSegmented)
         segmentedControl.selectedSegmentTintColor = ColorEnum.getColor(of: .selectedSegmented)
         segmentedControl.selectedSegmentIndex = 0
@@ -74,16 +73,21 @@ class StartView: UIView {
         let checkbox = Checkbox()
         checkbox.translatesAutoresizingMaskIntoConstraints = false
         checkbox.setTitle("Agree with", for: .normal)
+        checkbox.onStateChanged = chackboxStateChanged
         return checkbox
     }()
     
     private lazy var termsButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Terms and conditions", for: .normal)
+        let attributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: ColorEnum.getColor(of: .titleYellow),
+            .font: UIFont.systemFont(ofSize: FontSizeEnum.getSize(of: .text)),
+            .underlineStyle: NSUnderlineStyle.single.rawValue
+        ]
+        let attributedString = NSAttributedString(string: "Terms and conditions", attributes: attributes)
+        button.setAttributedTitle(attributedString, for: .normal)
         button.addTarget(self, action: #selector(termsButtonTapped), for: .touchUpInside)
-        let color = ColorEnum.getColor(of: .titleYellow)
-        button.setTitleColor(color, for: .normal)
         return button
     }()
     
@@ -134,15 +138,36 @@ class StartView: UIView {
     
     // MARK: Actions
     @objc func textFieldDidChange() {
-        // TODO: Implementar a lógica de habilitar/desabilitar o botão
+        updateStartButtonState()
+    }
+    
+    func chackboxStateChanged() {
+        updateStartButtonState()
+    }
+    
+    func updateStartButtonState() {
+        let textIsValid = participantsTextFieldIsValid()
+        let isCheckboxSelected = agreeCheckbox.isSelected
+        startButton.isEnabled = textIsValid && isCheckboxSelected
+    }
+    
+    func participantsTextFieldIsValid() -> Bool {
+        if let text = participantsTextField.text,
+           let number = Int(text),
+           number > 0 {
+            return true
+        }
+        return false
     }
     
     @objc func termsButtonTapped() {
         // TODO: Implementar a lógica de abrir o texto dos termos & condicoes
+        print("clicou")
     }
     
     @objc func startButtonTapped() {
         // TODO: Implementar a lógica de chamar a outra view controller
+        print("Clicou")
     }
 }
 
