@@ -22,6 +22,7 @@ class Checkbox: UIButton {
         configure()
     }
     
+    // MARK: Methods
     private func configure() {
         setupCheckBox(title: currentTitle)
         addTarget(self, action: #selector(clickAction), for: .touchUpInside)

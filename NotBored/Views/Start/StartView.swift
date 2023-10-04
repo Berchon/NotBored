@@ -126,6 +126,9 @@ class StartView: UIView {
         return stackView
     }()
     
+    // MARK: - Properties
+    weak var delegate: StartDelegateProtocol?
+    
     // MARK: Initializers
     init() {
         super.init(frame: .zero)
@@ -137,37 +140,37 @@ class StartView: UIView {
     }
     
     // MARK: Actions
-    @objc func textFieldDidChange() {
+    @objc private func textFieldDidChange() {
         updateStartButtonState()
     }
     
-    func chackboxStateChanged() {
+    private func chackboxStateChanged() {
         updateStartButtonState()
     }
     
-    func updateStartButtonState() {
+    @objc private func termsButtonTapped() {
+        delegate?.navigateToTerms()
+    }
+    
+    @objc private func startButtonTapped() {
+        // TODO: Implementar a lógica de chamar a outra view controller
+        print("Clicou")
+    }
+    
+    // MARK: Methods
+    private func updateStartButtonState() {
         let textIsValid = participantsTextFieldIsValid()
         let isCheckboxSelected = agreeCheckbox.isSelected
         startButton.isEnabled = textIsValid && isCheckboxSelected
     }
     
-    func participantsTextFieldIsValid() -> Bool {
+    private func participantsTextFieldIsValid() -> Bool {
         if let text = participantsTextField.text,
            let number = Int(text),
            number > 0 {
             return true
         }
         return false
-    }
-    
-    @objc func termsButtonTapped() {
-        // TODO: Implementar a lógica de abrir o texto dos termos & condicoes
-        print("clicou")
-    }
-    
-    @objc func startButtonTapped() {
-        // TODO: Implementar a lógica de chamar a outra view controller
-        print("Clicou")
     }
 }
 
@@ -180,7 +183,6 @@ extension StartView: ViewCode {
     func setupConstrains() {
         displayStackViewConstraints()
         participantsTextFieldConstraints()
-        
         startButtonConstraints()
     }
     
