@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760981882ACB3E5E006FDC34 /* PriceRangeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760981872ACB3E5E006FDC34 /* PriceRangeEnum.swift */; };
+		7609818A2ACB6B5D006FDC34 /* SpacingSizeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760981892ACB6B5D006FDC34 /* SpacingSizeEnum.swift */; };
+		761FA0672AC7A29600AFDC4C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761FA0662AC7A29600AFDC4C /* StartViewController.swift */; };
+		761FA0692AC7A3A700AFDC4C /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761FA0682AC7A3A700AFDC4C /* StartView.swift */; };
+		761FA06E2AC7C40B00AFDC4C /* CheckboxIconEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761FA06D2AC7C40B00AFDC4C /* CheckboxIconEnum.swift */; };
+		7626CEEB2AC8D3EF00965C7D /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7626CEEA2AC8D3EF00965C7D /* Checkbox.swift */; };
+		76366A012ACA0C7400EDD42D /* ColorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76366A002ACA0C7400EDD42D /* ColorEnum.swift */; };
+		76366A032ACA1E4200EDD42D /* FontSizeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76366A022ACA1E4200EDD42D /* FontSizeEnum.swift */; };
 		7687513F2AC6755700AD90E2 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687513E2AC6755700AD90E2 /* ViewCode.swift */; };
 		76BA3D812AC51C2E00CEC8C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3D802AC51C2E00CEC8C5 /* AppDelegate.swift */; };
 		76BA3D832AC51C2E00CEC8C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3D822AC51C2E00CEC8C5 /* SceneDelegate.swift */; };
-		76BA3D852AC51C2E00CEC8C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3D842AC51C2E00CEC8C5 /* ViewController.swift */; };
 		76BA3D8A2AC51C3100CEC8C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BA3D892AC51C3100CEC8C5 /* Assets.xcassets */; };
 		76BA3D8D2AC51C3100CEC8C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BA3D8B2AC51C3100CEC8C5 /* LaunchScreen.storyboard */; };
+		76BF9B2C2ACE123500DBBEF8 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF9B2B2ACE123400DBBEF8 /* TermsViewController.swift */; };
+		76BF9B2E2ACE133400DBBEF8 /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF9B2D2ACE133400DBBEF8 /* TermsView.swift */; };
+		76BF9B302ACE1CAD00DBBEF8 /* TermsDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF9B2F2ACE1CAD00DBBEF8 /* TermsDelegateProtocol.swift */; };
+		76BF9B322ACE1E3400DBBEF8 /* StartDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF9B312ACE1E3400DBBEF8 /* StartDelegateProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		760981872ACB3E5E006FDC34 /* PriceRangeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceRangeEnum.swift; sourceTree = "<group>"; };
+		760981892ACB6B5D006FDC34 /* SpacingSizeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacingSizeEnum.swift; sourceTree = "<group>"; };
+		761FA0662AC7A29600AFDC4C /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		761FA0682AC7A3A700AFDC4C /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		761FA06D2AC7C40B00AFDC4C /* CheckboxIconEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxIconEnum.swift; sourceTree = "<group>"; };
+		7626CEEA2AC8D3EF00965C7D /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		76366A002ACA0C7400EDD42D /* ColorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorEnum.swift; sourceTree = "<group>"; };
+		76366A022ACA1E4200EDD42D /* FontSizeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeEnum.swift; sourceTree = "<group>"; };
 		7687513E2AC6755700AD90E2 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 		76BA3D7D2AC51C2E00CEC8C5 /* NotBored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotBored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BA3D802AC51C2E00CEC8C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76BA3D822AC51C2E00CEC8C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		76BA3D842AC51C2E00CEC8C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76BA3D892AC51C3100CEC8C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76BA3D8C2AC51C3100CEC8C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76BA3D8E2AC51C3100CEC8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76BF9B2B2ACE123400DBBEF8 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		76BF9B2D2ACE133400DBBEF8 /* TermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsView.swift; sourceTree = "<group>"; };
+		76BF9B2F2ACE1CAD00DBBEF8 /* TermsDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsDelegateProtocol.swift; sourceTree = "<group>"; };
+		76BF9B312ACE1E3400DBBEF8 /* StartDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDelegateProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +59,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		761FA05D2AC7A12200AFDC4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		761FA05E2AC7A12F00AFDC4C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		761FA05F2AC7A14B00AFDC4C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				76366A002ACA0C7400EDD42D /* ColorEnum.swift */,
+				76366A022ACA1E4200EDD42D /* FontSizeEnum.swift */,
+				760981892ACB6B5D006FDC34 /* SpacingSizeEnum.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		761FA0602AC7A15E00AFDC4C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				761FA06C2AC7C3BC00AFDC4C /* Checkbox */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		761FA0612AC7A19000AFDC4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				761FA0622AC7A1E900AFDC4C /* Start */,
+				761FA0632AC7A21000AFDC4C /* TermsAndConditions */,
+				761FA0642AC7A22400AFDC4C /* Activities */,
+				761FA0652AC7A23200AFDC4C /* ActivitySuggestion */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		761FA0622AC7A1E900AFDC4C /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				761FA0662AC7A29600AFDC4C /* StartViewController.swift */,
+				761FA0682AC7A3A700AFDC4C /* StartView.swift */,
+				760981872ACB3E5E006FDC34 /* PriceRangeEnum.swift */,
+				76BF9B312ACE1E3400DBBEF8 /* StartDelegateProtocol.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		761FA0632AC7A21000AFDC4C /* TermsAndConditions */ = {
+			isa = PBXGroup;
+			children = (
+				76BF9B2B2ACE123400DBBEF8 /* TermsViewController.swift */,
+				76BF9B2D2ACE133400DBBEF8 /* TermsView.swift */,
+				76BF9B2F2ACE1CAD00DBBEF8 /* TermsDelegateProtocol.swift */,
+			);
+			path = TermsAndConditions;
+			sourceTree = "<group>";
+		};
+		761FA0642AC7A22400AFDC4C /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		761FA0652AC7A23200AFDC4C /* ActivitySuggestion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ActivitySuggestion;
+			sourceTree = "<group>";
+		};
+		761FA06C2AC7C3BC00AFDC4C /* Checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				761FA06D2AC7C40B00AFDC4C /* CheckboxIconEnum.swift */,
+				7626CEEA2AC8D3EF00965C7D /* Checkbox.swift */,
+			);
+			path = Checkbox;
+			sourceTree = "<group>";
+		};
 		7687513C2AC6751F00AD90E2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,9 +184,13 @@
 		76BA3D7F2AC51C2E00CEC8C5 /* NotBored */ = {
 			isa = PBXGroup;
 			children = (
+				761FA0612AC7A19000AFDC4C /* Views */,
+				761FA0602AC7A15E00AFDC4C /* Components */,
+				761FA05F2AC7A14B00AFDC4C /* Helpers */,
+				761FA05E2AC7A12F00AFDC4C /* Services */,
+				761FA05D2AC7A12200AFDC4C /* Models */,
 				7687513D2AC6754600AD90E2 /* Protocols */,
 				7687513C2AC6751F00AD90E2 /* Resources */,
-				76BA3D842AC51C2E00CEC8C5 /* ViewController.swift */,
 				76BA3D8E2AC51C3100CEC8C5 /* Info.plist */,
 			);
 			path = NotBored;
@@ -153,10 +266,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76BA3D852AC51C2E00CEC8C5 /* ViewController.swift in Sources */,
+				76366A032ACA1E4200EDD42D /* FontSizeEnum.swift in Sources */,
+				7626CEEB2AC8D3EF00965C7D /* Checkbox.swift in Sources */,
+				761FA0672AC7A29600AFDC4C /* StartViewController.swift in Sources */,
+				76BF9B302ACE1CAD00DBBEF8 /* TermsDelegateProtocol.swift in Sources */,
+				76BF9B2C2ACE123500DBBEF8 /* TermsViewController.swift in Sources */,
+				761FA06E2AC7C40B00AFDC4C /* CheckboxIconEnum.swift in Sources */,
+				76BF9B2E2ACE133400DBBEF8 /* TermsView.swift in Sources */,
+				76366A012ACA0C7400EDD42D /* ColorEnum.swift in Sources */,
 				76BA3D812AC51C2E00CEC8C5 /* AppDelegate.swift in Sources */,
+				761FA0692AC7A3A700AFDC4C /* StartView.swift in Sources */,
+				76BF9B322ACE1E3400DBBEF8 /* StartDelegateProtocol.swift in Sources */,
 				76BA3D832AC51C2E00CEC8C5 /* SceneDelegate.swift in Sources */,
+				7609818A2ACB6B5D006FDC34 /* SpacingSizeEnum.swift in Sources */,
 				7687513F2AC6755700AD90E2 /* ViewCode.swift in Sources */,
+				760981882ACB3E5E006FDC34 /* PriceRangeEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +424,7 @@
 				INFOPLIST_FILE = NotBored/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,7 +452,7 @@
 				INFOPLIST_FILE = NotBored/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
