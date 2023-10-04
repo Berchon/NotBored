@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760981882ACB3E5E006FDC34 /* PriceRangeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760981872ACB3E5E006FDC34 /* PriceRangeEnum.swift */; };
+		7609818A2ACB6B5D006FDC34 /* SpacingSizeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760981892ACB6B5D006FDC34 /* SpacingSizeEnum.swift */; };
 		761FA0672AC7A29600AFDC4C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761FA0662AC7A29600AFDC4C /* StartViewController.swift */; };
 		761FA0692AC7A3A700AFDC4C /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761FA0682AC7A3A700AFDC4C /* StartView.swift */; };
 		761FA06E2AC7C40B00AFDC4C /* CheckboxIconEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761FA06D2AC7C40B00AFDC4C /* CheckboxIconEnum.swift */; };
 		7626CEEB2AC8D3EF00965C7D /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7626CEEA2AC8D3EF00965C7D /* Checkbox.swift */; };
+		76366A012ACA0C7400EDD42D /* ColorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76366A002ACA0C7400EDD42D /* ColorEnum.swift */; };
+		76366A032ACA1E4200EDD42D /* FontSizeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76366A022ACA1E4200EDD42D /* FontSizeEnum.swift */; };
 		7687513F2AC6755700AD90E2 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687513E2AC6755700AD90E2 /* ViewCode.swift */; };
 		76BA3D812AC51C2E00CEC8C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3D802AC51C2E00CEC8C5 /* AppDelegate.swift */; };
 		76BA3D832AC51C2E00CEC8C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA3D822AC51C2E00CEC8C5 /* SceneDelegate.swift */; };
@@ -20,10 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		760981872ACB3E5E006FDC34 /* PriceRangeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceRangeEnum.swift; sourceTree = "<group>"; };
+		760981892ACB6B5D006FDC34 /* SpacingSizeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacingSizeEnum.swift; sourceTree = "<group>"; };
 		761FA0662AC7A29600AFDC4C /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		761FA0682AC7A3A700AFDC4C /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		761FA06D2AC7C40B00AFDC4C /* CheckboxIconEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxIconEnum.swift; sourceTree = "<group>"; };
 		7626CEEA2AC8D3EF00965C7D /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		76366A002ACA0C7400EDD42D /* ColorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorEnum.swift; sourceTree = "<group>"; };
+		76366A022ACA1E4200EDD42D /* FontSizeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeEnum.swift; sourceTree = "<group>"; };
 		7687513E2AC6755700AD90E2 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 		76BA3D7D2AC51C2E00CEC8C5 /* NotBored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotBored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BA3D802AC51C2E00CEC8C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +70,9 @@
 		761FA05F2AC7A14B00AFDC4C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				76366A002ACA0C7400EDD42D /* ColorEnum.swift */,
+				76366A022ACA1E4200EDD42D /* FontSizeEnum.swift */,
+				760981892ACB6B5D006FDC34 /* SpacingSizeEnum.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -90,6 +101,7 @@
 			children = (
 				761FA0662AC7A29600AFDC4C /* StartViewController.swift */,
 				761FA0682AC7A3A700AFDC4C /* StartView.swift */,
+				760981872ACB3E5E006FDC34 /* PriceRangeEnum.swift */,
 			);
 			path = Start;
 			sourceTree = "<group>";
@@ -245,14 +257,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76366A032ACA1E4200EDD42D /* FontSizeEnum.swift in Sources */,
 				7626CEEB2AC8D3EF00965C7D /* Checkbox.swift in Sources */,
 				761FA0672AC7A29600AFDC4C /* StartViewController.swift in Sources */,
 				761FA06E2AC7C40B00AFDC4C /* CheckboxIconEnum.swift in Sources */,
 				76BA3D852AC51C2E00CEC8C5 /* ViewController.swift in Sources */,
+				76366A012ACA0C7400EDD42D /* ColorEnum.swift in Sources */,
 				76BA3D812AC51C2E00CEC8C5 /* AppDelegate.swift in Sources */,
 				761FA0692AC7A3A700AFDC4C /* StartView.swift in Sources */,
 				76BA3D832AC51C2E00CEC8C5 /* SceneDelegate.swift in Sources */,
+				7609818A2ACB6B5D006FDC34 /* SpacingSizeEnum.swift in Sources */,
 				7687513F2AC6755700AD90E2 /* ViewCode.swift in Sources */,
+				760981882ACB3E5E006FDC34 /* PriceRangeEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,7 +412,7 @@
 				INFOPLIST_FILE = NotBored/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -424,7 +440,7 @@
 				INFOPLIST_FILE = NotBored/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -12,7 +12,7 @@ class StartViewController: UIViewController {
     // MARK: Screen objects
     private lazy var startView: StartView = {
         let view = StartView()
-        view.backgroundColor = .red
+        view.backgroundColor = ColorEnum.getColor(of: .background)
         return view
     }()
     
